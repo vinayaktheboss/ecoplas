@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<head>
+  <style  >
+       
+        #nav-bar {
+    font-size:50px;
+  }
+  
+  .logo {
+    width: 60vw;
+  }
+  
+  @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  nav > ul {
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  /** global element styling **/
+  
+  @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+  
+  
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /** global classes styling **/
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .logo {
+    width: 60vw;
+  }
+  
+  
+  
+  
+  
+  
+  body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(
+        110deg,
+        rgba(34, 8, 18, 0.4),
+        rgba(6, 14, 36, 0.1)
+      ),
+      url(https://thumbs.dreamstime.com/b/person-s-hand-collects-plastic-bottles-recycling-idea-environmental-conservation-171739045.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 21px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .product > h2 {
+     font-size: 60px;
+    margin-top: 5px;
+  }
+  
+  .product > ol {
+    margin: 5px 0;
+     font-size: 20px;
+  }
+  
+  .product > ol > li {
+    color: rgb(19, 19, 20);
+     font-size: 20px;
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+  }
+  
+  .product > button:hover {
+    background-color: red;
+    transition: background-color 1s;
+  }
+  
+  @media (max-width: 600px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 200px;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  
+  
+  @media (max-width: 550px) {
+    #features .icon {
+      display: none;
+    }
+  }
+  
+  #features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+  }
+  
+  @media (max-width: 550px) {
+    #features .desc {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    #features {
+      margin-top: 0;
+    }
+  }
+  
+</style>  
+</head>
+
+<body>
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        src="https://image.shutterstock.com/image-vector/vector-image-water-bottles-recycling-260nw-520480411.jpg"
+        alt="recycle"
+      />
+    </div>
+    <a href="plastic.html">Sell Plastic</a>
+  <h2> <a href="shopping.html">visit our shopping site</a><h2>
+    <nav id="nav-bar" style="background-color:yellow;">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+      
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        
+          <li>   <a href="creator.html" target="_blank" id="tribute-link">Be a seller</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>RECYCLED PLASTIC PRODUCTS</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Premium Materials</h2>
+          <p>
+         We make high quality products from plastic
+          we make it safer for you to use it and buying it will make you a hero who save the earth from pollution</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p>
+            We make sure you recieve your product as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages
+            
+          </p>
+        </div>
+        
+          <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">footwear</div>
+        <h2>₹400</h2>
+        <ol>
+          <li>shoes.</li>
+          <li>slippers.</li>
+        
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">acessories</div>
+        <h2>₹500</h2>
+        <ol>
+          <li>watch.</li>
+          <li>phone case.</li>
+          <li>bathroom set.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">artistic</div>
+        <h2>₹700</h2>
+        <ol>
+          <li>wall art</li>
+          <li>figurine</li>
+          <li>wall decor.</li>
+          <li>lamps.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span> 2022, Original </span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

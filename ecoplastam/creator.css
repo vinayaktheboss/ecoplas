@@ -1,0 +1,51 @@
+body {
+    margin-top: 80px;
+   text-align:center;
+ }
+ 
+ body::before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background: var(--color-darkblue);
+   background-image: 
+     url(https://img.freepik.com/free-photo/shopping-cart-filled-with-coins-copy-space-background_23-2148305919.jpg?size=626&ext=jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ #title {
+   font-size:88px;
+  font-family: Tahoma, Verdana, sans-serif;
+ }
+ 
+ #fire { width:50%;
+ }
+ 
+ #dropdown {
+   width:50%;
+ }
+ 
+ 
+ 
+ .input-textarea {
+   min-height: 280px;
+   width: 100%;
+   padding: 0.625rem;
+   resize: vertical;
+ }
+ 
+ .submit-button {
+   display: block;
+   width: 100%;
+   padding: 0.75rem;
+   background: green;
+   color: inherit;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 

@@ -1,0 +1,211 @@
+#nav-bar {
+    font-size:50px;
+  }
+  
+  .logo {
+    width: 60vw;
+  }
+  
+  @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  nav > ul {
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  /** global element styling **/
+  
+  @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+  
+  
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /** global classes styling **/
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .logo {
+    width: 60vw;
+  }
+  
+  
+  
+  
+  
+  
+  body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(
+        110deg,
+        rgba(34, 8, 18, 0.4),
+        rgba(6, 14, 36, 0.1)
+      ),
+      url(https://thumbs.dreamstime.com/b/person-s-hand-collects-plastic-bottles-recycling-idea-environmental-conservation-171739045.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 21px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .product > h2 {
+     font-size: 60px;
+    margin-top: 5px;
+  }
+  
+  .product > ol {
+    margin: 5px 0;
+     font-size: 20px;
+  }
+  
+  .product > ol > li {
+    color: blue;
+     font-size: 20px;
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+  }
+  
+  .product > button:hover {
+    background-color: red;
+    transition: background-color 1s;
+  }
+  
+  @media (max-width: 600px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 200px;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  
+  
+  @media (max-width: 550px) {
+    #features .icon {
+      display: none;
+    }
+  }
+  
+  #features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+  }
+  
+  @media (max-width: 550px) {
+    #features .desc {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    #features {
+      margin-top: 0;
+    }
+  }
+  
